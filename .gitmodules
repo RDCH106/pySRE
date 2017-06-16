@@ -1,0 +1,3 @@
+[submodule "pySRE/Simple-RFC1738-Encoder"]
+	path = pySRE/Simple-RFC1738-Encoder
+	url = https://github.com/RDCH106/Simple-RFC1738-Encoder.git
