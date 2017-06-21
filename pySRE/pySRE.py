@@ -3,31 +3,37 @@
 import execjs
 import os
 
+
 class PySRC:
 
-    def __init__(self):
+    def __init__(self, engine=None):
 
-        self.master_file = ""
+        self.__master_file = ""
         dir_path = os.path.dirname(os.path.realpath(__file__))
         with open(dir_path + "/Simple-RFC1738-Encoder/js/common.js") as f:
             file = f.read()
-            self.master_file += file + "\n\n"
+            self.__master_file += file + "\n\n"
 
         with open(dir_path + "/Simple-RFC1738-Encoder/js/encode.js") as f:
             file = f.read()
-            self.master_file += file + "\n\n"
+            self.__master_file += file + "\n\n"
 
         with open(dir_path + "/Simple-RFC1738-Encoder/js/decode.js") as f:
             file = f.read()
-            self.master_file += file + "\n\n"
+            self.__master_file += file + "\n\n"
 
         with open(dir_path + "/Simple-RFC1738-Encoder/js/utf8.js") as f:
             file = f.read()
-            self.master_file += file
+            self.__master_file += file
 
-            #print(self.master_file)
+        #print(self.__master_file)
 
-        self.ctx = execjs.compile(self.master_file)
+        if engine is None:
+            self.__execjs_engine = execjs.get()  # automatically picked runtime
+        else:
+            self.__execjs_engine = execjs.get(engine)
+        self.ctx = self.__execjs_engine.compile(self.__master_file)
+
 
     def convert_to_url(self, str):
         return self.ctx.call("encode", str)
