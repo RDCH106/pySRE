@@ -41,5 +41,8 @@ class PySRC:
     def convert_to_string_with_utf8(self, url):
         return self.ctx.call("utf8_decode", self.ctx.call("decode", url))
 
+    def utf8_encode(self, str):
+        return self.ctx.call("utf8_encode", str)
 
-
+    def utf8_decode(self, str):
+        return self.ctx.call("utf8_decode", str)
