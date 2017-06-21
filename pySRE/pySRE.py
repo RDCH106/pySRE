@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
 import execjs
+import execjs.runtime_names
 import os
 
+SUPPORTED_ENGINES = execjs.runtime_names
 
 class PySRC:
 
@@ -34,6 +36,10 @@ class PySRC:
             self.__execjs_engine = execjs.get(engine)
         self.ctx = self.__execjs_engine.compile(self.__master_file)
 
+
+    @property
+    def execjs_engine(self):
+        return self.__execjs_engine
 
     def convert_to_url(self, str):
         return self.ctx.call("encode", str)
