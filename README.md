@@ -1,5 +1,7 @@
 # pySRE
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3c484020aae54e939eb6624087ccfd27)](https://www.codacy.com/app/RDCH106/pySRE?utm_source=github.com&utm_medium=referral&utm_content=RDCH106/pySRE&utm_campaign=badger)
+
 Experimental Python wrapper for **Simple-RFC1738-Encoder** written in JavasScript.
 
 More info about Simple-RFC1738-Encoder: https://github.com/RDCH106/Simple-RFC1738-Encoder
