@@ -15,7 +15,11 @@ More info about Simple-RFC1738-Encoder: https://github.com/RDCH106/Simple-RFC173
 
 ### Installation
 
-You can clone from source and use it with:
+You can install or upgrade pySRE with:
+
+`$ pip install pySRE --upgrade`
+
+Or you can install from source with:
 
 ```
 $ git clone https://github.com/RDCH106/pySRE.git --recursive
