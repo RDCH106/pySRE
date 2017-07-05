@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 from pySRE import Metadata
 
 metadata = Metadata()
@@ -81,7 +81,7 @@ setup(
     author_email = 'contact@rdch106.hol.es',
     url = 'https://github.com/RDCH106/pySRE',
     download_url = 'https://github.com/RDCH106/pySRE/archive/v'+metadata.get_version()+'.tar.gz',
-    keywords = ['python-wrapper', 'url-encoder', 'javascript'],
+    keywords = 'python-wrapper url-encoder javascript',
     classifiers = ['Programming Language :: Python',
                    'Programming Language :: Python :: 2.7',
                    'Programming Language :: Python :: 3.3',
