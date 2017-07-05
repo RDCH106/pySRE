@@ -1,5 +1,5 @@
 from distutils.core import setup
-from linearizator import Metadata
+from pySRE import Metadata
 
 metadata = Metadata()
 
@@ -55,7 +55,7 @@ Quick example
    #    pySRE.PySRC(pySRE.SUPPORTED_ENGINES.Node)
 
    pySRE = pySRE.PySRC()  # automatically picks the best runtime
-   print("\nCurrrent engine: %s\n" % pySRE.execjs_engine)
+   print("\\nCurrrent engine: %s\\n" % pySRE.execjs_engine)
 
    my_url = "http://mascandobits.es?fullname=Rubén de Celis Hernández"
    print("Original URL: %s" % my_url)
