@@ -71,7 +71,9 @@ Quick example
 
 setup(
     name = 'pySRE',
-    packages = ['pySRE'],
+    packages = ['pySRE', ''],
+    package_data={'pySRE': ['Simple-RFC1738-Encoder/*'],
+                  '': ['requirements.txt']},
     version = metadata.get_version(),
     install_requires=requirements(),
     license = 'GPL v3',
