@@ -9,7 +9,7 @@ Experimental Python wrapper for **Simple-RFC1738-Encoder** written in JavasScrip
 
 More info about Simple-RFC1738-Encoder: https://github.com/RDCH106/Simple-RFC1738-Encoder
 
-### What can I do with Linearizator?
+### What can I do with pySRE?
 
 - The same as original library of Simple-RFC1738-Encoder
 
