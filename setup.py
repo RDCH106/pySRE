@@ -72,7 +72,10 @@ Quick example
 setup(
     name = 'pySRE',
     packages = ['pySRE', ''],
-    package_data={'pySRE': ['Simple-RFC1738-Encoder/*'],
+    package_data={'pySRE': ['Simple-RFC1738-Encoder/*',
+                            'Simple-RFC1738-Encoder/js/*.js',
+                            'Simple-RFC1738-Encoder/css/*.css',
+                            'Simple-RFC1738-Encoder/img/*'],
                   '': ['requirements.txt']},
     version = metadata.get_version(),
     install_requires=requirements(),
