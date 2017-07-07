@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 
-from . import pySRE
+try:
+    from . import pySRE
+except ImportError as e:
+    print('%s: %s' % (e.name, e.msg))
 
 class Metadata:
     def __init__(self):
-        self.__version__ = '0.1.5'
+        self.__version__ = '0.1.6'
         self.__author__ = 'Rubén de Celis Hernández'
 
     def get_version(self):
