@@ -36,7 +36,7 @@ Or you can install from source with:
 
 - ``$ git clone https://github.com/RDCH106/pySRE.git --recursive``
 - ``$ cd pySRE``
-- ``$ pip install -r requirements.txt``
+- ``$ python setup.py install``
 
 
 Quick example
