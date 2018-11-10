@@ -1,1 +1,1 @@
-PyExecJS
+PyExecJS>=1.4.0
